@@ -1,0 +1,26 @@
+b_rw|seq SET/GET, 1 conn, 1 task|155737|6.4|5.6|18.0|195|0.32
+b_rw|conc INCR, 50 tasks, 1 shared conn|612160|1.6|0.0|0.0|8|0.09
+b_rw|conc INCR, 50 tasks, pool of 4 shared conns|438319|2.3|0.0|0.0|2|0.13
+b_rw|batch SET, batch 100|1693997|0.6|0.0|0.0|11|0.02
+b_rw|batch SET, batch 1000|1705281|0.6|0.0|0.0|0|0.10
+b_oldasync|seq SET/GET, 1 conn, 1 task|98707|10.1|8.9|28.6|195|0.63
+b_oldasync|conc INCR, 50 tasks, 1 shared conn|98412|10.2|0.0|0.0|22|0.64
+b_oldasync|conc INCR, 50 tasks, 50 conns (1 per task)|132005|7.6|0.0|0.0|70|0.51
+b_oldasync|pipeline SET, batch 100|520767|1.9|0.0|0.0|0|0.15
+b_oldasync|pipeline SET, batch 1000|557804|1.8|0.0|0.0|1|0.69
+b_oldsync|seq SET/GET, 1 conn, 1 task|161868|6.2|5.5|17.6|195|0.28
+b_oldsync|pipeline SET, batch 100|1161399|0.9|0.0|0.0|0|0.04
+b_oldsync|pipeline SET, batch 1000|1251427|0.8|0.0|0.0|41|0.18
+b_rw|seq SET/GET, 1 conn, 1 task|164799|6.1|5.6|16.5|195|0.30
+b_rw|conc INCR, 50 tasks, 1 shared conn|642376|1.6|0.0|0.0|8|0.08
+b_rw|conc INCR, 50 tasks, pool of 4 shared conns|458936|2.2|0.0|0.0|2|0.12
+b_rw|batch SET, batch 100|1850250|0.5|0.0|0.0|11|0.02
+b_rw|batch SET, batch 1000|1991232|0.5|0.0|0.0|0|0.08
+b_oldasync|seq SET/GET, 1 conn, 1 task|92090|10.9|9.0|32.0|195|0.69
+b_oldasync|conc INCR, 50 tasks, 1 shared conn|104195|9.6|0.0|0.0|22|0.62
+b_oldasync|conc INCR, 50 tasks, 50 conns (1 per task)|116784|8.6|0.0|0.0|70|0.57
+b_oldasync|pipeline SET, batch 100|520702|1.9|0.0|0.0|0|0.15
+b_oldasync|pipeline SET, batch 1000|582838|1.7|0.0|0.0|1|0.66
+b_oldsync|seq SET/GET, 1 conn, 1 task|165058|6.1|5.5|15.3|195|0.28
+b_oldsync|pipeline SET, batch 100|1261210|0.8|0.0|0.0|0|0.04
+b_oldsync|pipeline SET, batch 1000|1475925|0.7|0.0|0.0|41|0.16
